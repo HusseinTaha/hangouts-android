@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
+import com.androidquery.AQuery;
 import com.comred.Gifs.GifAnimationDrawable;
 import com.comred.Glob.Global;
 import com.comred.JsonDATA.JsonContact;
@@ -38,6 +40,8 @@ public class SplashScreen extends Activity {
 
     private ImageView img_raindrop;
     private GifAnimationDrawable rain;
+    private int width, height;
+    private AQuery ajax;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +49,15 @@ public class SplashScreen extends Activity {
         setContentView(R.layout.activity_splash_screen);
 
         Global.SetContext(this);
-       /* width= Global.getwidth();
+        width = Global.getwidth();
         height=Global.getheight();
         ajax=  new AQuery(this);
-        ajax.id(R.id.img_logo).width(width*50/100);
-        ajax.id(R.id.img_logo).margin(0,10*height/100,0,0);
-        ajax.id(R.id.img_raindrop).width(width*50/100);
-        ajax.id(R.id.img_raindrop).height(height*4/100);*/
+        ajax.id(R.id.img_logo).getView().getLayoutParams().width = width * 84 / 100;
+        ajax.id(R.id.img_logo).getView().getLayoutParams().height = height * 30 / 100;
+        ((RelativeLayout.LayoutParams) ajax.id(R.id.img_logo).getView().getLayoutParams()).setMargins(0, 14 * height / 100, 0, 0);
+        ((RelativeLayout.LayoutParams) ajax.id(R.id.img_raindrop).getView().getLayoutParams()).setMargins(0, 13 * height / 100, 0, 0);
+        ajax.id(R.id.img_raindrop).getView().getLayoutParams().width = width * 42 / 100;
+        ajax.id(R.id.img_raindrop).getView().getLayoutParams().height = height * 5 / 100;
 
 
         //load GIF image to imageview.
