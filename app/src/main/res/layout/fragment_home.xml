@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.comred.Fragments.HomeFragment">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_schedule_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/schedule_home_selector"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dip"
+            android:layout_marginRight="50dip"/>
+
+
+        <ImageView
+            android:id="@+id/iv_contacts_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/contacts_home_selector"
+            android:layout_below="@+id/iv_schedule_home"
+            android:layout_toLeftOf="@+id/iv_schedule_home"
+            android:layout_marginTop="-30dip"
+            android:layout_marginRight="-33dip"/>
+
+        <ImageView
+            android:id="@+id/iv_upload_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/upload_home_selector"
+            android:layout_below="@+id/iv_contacts_home"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-30dip"
+            android:layout_marginRight="50dip"/>
+
+        <ImageView
+            android:id="@+id/iv_photowall_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/photowall_home_selector"
+            android:layout_toLeftOf="@+id/iv_upload_home"
+            android:layout_below="@+id/iv_upload_home"
+            android:layout_marginTop="-30dip"
+            android:layout_marginRight="-33dip"/>
+
+        </RelativeLayout>
+
+
+</FrameLayout>

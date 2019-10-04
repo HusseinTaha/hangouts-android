@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Red">#E20613</color>
+    <color name="RedDark">#BD1622</color>
+    <color name="white">#FFFFFF</color>
+    <color name="WhiteGray">#F7F7F7</color>
+    <color name="WGray1">#E7E8E9</color>
+    <color name="WGray2">#9a9a9b</color>
+    <color name="Gray">#575756</color>
+    <color name="Gray_day">#a4a4a4</color>
+    <color name="Gray_relatedPages">#60625D</color>
+    <color name="Gray2">#c9c9ce</color>
+    <color name="DarkGray">#3C3C38</color>
+    <color name="BlackGray">#393B40</color>
+    <color name="Black">#000000</color>
+
+
+    <color name="DarkBlue_bottom_top">#013c4c</color>
+    <color name="blue_app">#91DBE3</color>
+    <color name="blue_app_transp">#99DAF4F6</color>
+
+<!--About us-->
+    <color name="aboutUS_text1">#231F20</color>
+    <color name="aboutUS_text2">#4E4F4B</color>
+
+
+    <!--Contact us-->
+    <color name="contactUS_text1">#00A9EA</color>
+    <color name="contactUS_text2">#262261</color>
+
+
+    <color name="static_text_color">#003366</color>
+
+
+
+    <!--Doctors us-->
+    <color name="doctors_text1">#6695B0</color>
+
+
+    <color name="dg_line1">#7d7f8e</color>
+    <color name="dg_line2">#d9dcf6</color>
+    <!--Medic us-->
+    <color name="medic_text1">#32AAE4</color>
+    <color name="medic_text2">#E3E4E5</color>
+
+</resources>

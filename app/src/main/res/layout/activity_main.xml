@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlue_bottom_top">
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/home"/>
+        <TextView
+            android:id="@+id/tv_fragmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/iv_home"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:textSize="25sp"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/white"
+            android:text="test"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:padding="5dip"
+            android:layout_marginRight="4dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cloud"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_mneu"
+            />
+
+    </RelativeLayout>
+
+
+
+<com.comred.Controls.SlideHolder
+    android:id="@+id/slideHolder"
+    android:layout_below="@+id/top_bar"
+    android:layout_above="@+id/viewBottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.comred.Controls.CustomLinear
+        android:id="@+id/expanded_menu"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/background"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+
+            android:id="@+id/App_container"
+            android:layout_height="fill_parent">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+
+</com.comred.Controls.SlideHolder>
+
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:background="@color/DarkBlue_bottom_top"/>
+</RelativeLayout>

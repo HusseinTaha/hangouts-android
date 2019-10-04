@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -70,23 +71,25 @@ public class SplashScreen extends Activity {
             e.printStackTrace();
         }
 
-       /* StringXORer stringXORer=  new StringXORer();
-        String x=stringXORer.encode("http://192.168.137.225:11749/Apis/Mobile/",this.getPackageName());
+        /*StringXORer stringXORer=  new StringXORer();
+        String x=stringXORer.encode("http://82.103.128.108:8888/Apis/Mobile/",this.getPackageName());
         Log.d("--url: ", StringXORer.ReverseS(x));
 
-        String x2=stringXORer.encode("http://192.168.137.225:11749/Upload/",this.getPackageName());
+        String x2=stringXORer.encode("http://82.103.128.108:8888/Upload/",this.getPackageName());
         Log.d("--url_photo: ",StringXORer.ReverseS(x2));*/
 
-      /* StringXORer stringXORer=  new StringXORer();
-        String x=stringXORer.encode("http://192.168.0.103/Apis/Mobile/",this.getPackageName());
+        /*StringXORer stringXORer=  new StringXORer();
+        String x=stringXORer.encode("http://192.168.1.101:8080/Apis/Mobile/",this.getPackageName());
         Log.d("--url: ",StringXORer.ReverseS(x));
 
-        String x2=stringXORer.encode("http://192.168.0.103:8282/Upload/",this.getPackageName());
-        Log.d("--url: ",StringXORer.ReverseS(x2));*/
+        String x2=stringXORer.encode("http://192.168.1.101:8080/Upload/",this.getPackageName());
+        Log.d("--URL_PHOTO: ",StringXORer.ReverseS(x2));*/
 
 
         //refresh, check for account information, get data if available.
-        refresh();
+       refresh();
+
+        //startActivity(new Intent(SplashScreen.this,MainActivity.class));
     }
 
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="about_us_id" type="id"/>
+    <item name="myschedule_id" type="id"/>
+    <item name="friends_schedule_id" type="id"/>
+    <item name="upload_photos_id" type="id"/>
+    <item name="photo_wall_id" type="id"/>
+    <item name="settings_id" type="id"/>
+
+
+
+</resources>

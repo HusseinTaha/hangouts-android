@@ -1,0 +1,103 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_parent"
+    tools:context="com.comred.Fragments.HangoutFragment">
+
+
+
+    <ImageView
+        android:layout_marginTop="10dip"
+        android:id="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_event_top"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="40dip"
+        android:padding="20dip"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.comred.Controls.CstmTextView
+                android:id="@+id/tv_date"
+                android:gravity="center"
+                android:padding="1dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/label_style"
+                android:text="Date "/>
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_marginTop="2dip"
+                android:paddingLeft="2dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/DarkBlue_bottom_top"
+                android:focusable="false"
+                android:background="@drawable/input_fields"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_event"
+            android:layout_marginTop="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.comred.Controls.CstmTextView
+                android:id="@+id/tv_event"
+                android:padding="1dip"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/label_style"
+                android:text="Event "/>
+
+            <EditText
+                android:id="@+id/et_event"
+                android:layout_marginTop="2dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textColor="@color/DarkBlue_bottom_top"
+                android:singleLine="false"
+                android:background="@drawable/input_fields"/>
+
+        </LinearLayout>
+
+
+        <com.comred.Controls.CstmTouchButton
+            android:id="@+id/btn_Add"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="center"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_image"
+            android:textColor="@color/white"
+            android:text="Add Event"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
